@@ -7,7 +7,7 @@
 			
 		}
 		
-		public function findActivityById($identifiant)
+		public function findActivityById($identifiant) // return String
 		{
 			$db = Database::getInstance(); 
 			$request = "SELECT * FROM Activity WHERE identifiant=:x"; 
@@ -21,5 +21,22 @@
 				return null; 
 			}
 		}
+		public function addActivity($activity){ // Return String 
+			$db = Database::getInstance(); 
+			$identifiant = $activity.getIdentifiant(); 
+			$duree = $activity.getDuree(); 
+			$date = $activity.getDate(); 
+			$description = $activity.getDescription(); 
+			$request = "INSERT INTO Activity(`identifiant`, `nom`, `duree`, `date`) VALUES('$identifiant', '$identifiant', '$duree', '$date', '$description')";
+			$pstmt = $db->prepare(); 
+			$result = $db->execute(); 
+			if ($result)
+				return "Activity successfuly deleted ! "; 
+			return "Failed to delete the Activity, please try again or call the admin if the problem persist"; 
+		}
+		public function removeActivity($id){
+			
+		}
+		
 	}
 ?>

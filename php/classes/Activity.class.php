@@ -35,10 +35,12 @@ class Activity {
 	}
 	public function getDescription()
 	{
+		if ($this->description == null)
+			$this->description = ""; 
 		return $this->description; 
 	}
 	public function setDescription($text='')
-	{
+	{ 
 		$this->description = $text; 
 	}
 
