@@ -1,0 +1,34 @@
+#mainConnexion{
+	padding-bottom:20%;
+}
+#divNewMembre{
+	margin-top : 7.5%;
+	margin-left : 10%;
+	float : left;	
+}
+#h2NouveauMembre{
+	margin-top: 0;
+	margin-left : 5%;
+	padding-top : 10%;
+}
+#nouveauMembre{
+	width : 100%;
+	border : solid 3px;
+	border-image : url(../images/cadreActivite.png) 30 1 round;
+	border-radius : 2em;
+	margin-left : 20%;
+	margin-top :0;
+	color : black;
+	padding : 0;
+}
+#h2Connexion{
+	padding-top : 10%;
+	margin-top : 0;
+	margin-left : 55%;
+}
+#connexionRegistration{
+	border : solid 3px #bda44d;
+	margin-right : 10%;
+	margin-left : 60%;
+	margin-top : 0%;
+}

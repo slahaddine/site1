@@ -1,0 +1,106 @@
+body{
+	background-image:url(../images/fond2.jpg); 
+}
+#all>div{
+	background-color:rgb(229,212,198)  ;
+}
+#all{
+	background-color:rgb(229,212,198) ;
+	-moz-box-shadow: 10px 10px 5px #FFF;
+	box-shadow: 10px 10px 5px #FFF;
+	width: 80%;
+	margin:auto; 
+	min-width: 1024px; 
+}
+#entete{
+	background-color:rgb(229,212,198) ; 
+	border:1px solid black; 
+	
+}
+#entete h2{
+	text-align:center; 
+}
+#menu{
+	background-color:rgb(124,159,176); 
+}
+#xmenu{
+	clear:both;
+	visibility:hidden; 
+	margin:0;
+	padding:0;
+}
+#menu ul{
+	margin:0;
+	padding:0;
+	line-height:10px;
+}
+#menu ul li{
+	position:relative; 
+	margin: 0px 18px 0px 0px; 
+	list-style-type:none; 
+	float:left; 
+}
+#menu ul li a{
+	border:1px solid black;
+	color:#000;
+	text-decoration:none; 
+	width:150px; 
+	height:35px;
+	text-align:center; 
+	display:block;
+}
+#menu ul ul{
+	position:absolute; 
+	visibility:hidden;  
+	top:31px;
+	color:black;
+}
+#menu ul li:hover ul{
+	visibility:visible; 
+}
+#menu ul li a:hover{
+
+}
+#menu li {
+	background-color:#999;
+}
+#menu li:hover{
+	background-color:white; 
+}
+#main>div{
+}
+#main{
+	clear:both;
+	background-color:rgb(229,212,198) ;
+}
+#center{
+	-moz-box-shadow: 7px 7px 3px #888888;
+	box-shadow: 7px 7px 3px #888888;
+	border-radius:5px;
+	height:450px; 
+	float:right;
+	width:1024px;
+}
+
+#second{
+	-moz-box-shadow: 7px 7px 3px #888888;
+	box-shadow: 7px 7px 3px #888888;
+	margin-right:1050px; 
+	height:450px; 
+}
+#PDP{
+	-moz-box-shadow: 7px 7px 3px #FFF;
+	box-shadow: 7px 7px 3px #FFF;
+	clear:both;
+	padding:0;
+	margin0;
+	text-align:center;
+	color:black;
+	background-color:#FFF;
+}
+#plop{
+	display:none;
+}
+msgBienvenue{
+	color : red; 
+}

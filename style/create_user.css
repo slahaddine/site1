@@ -1,0 +1,10 @@
+#all{
+	margin-left: 43%; 
+	width:300px;
+	border : 2px white dashed; 
+}
+
+body{
+	background-image:url(../images/bg_create_user.png);
+	color:white;  
+}
