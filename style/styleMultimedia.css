@@ -1,0 +1,37 @@
+#titrePlayer{
+	
+}
+#player{
+	margin-left : 20%;
+	margin-bottom : 10%;
+	padding-top : 5%;
+	width : 480px;
+	height : 360px;
+
+}
+#sousChaine{
+	border : 2px dotted #bda44d;
+}
+#titreChannel{
+	float : left;
+	margin-left : 10%;
+}
+#channel{
+	float : left;
+	clear : both;
+	width : 26.5%;
+	margin-top : 1%;
+	margin-left : 15%;
+}
+#titreChannel2{
+	margin-left : 23%;
+}
+#otherChannel{
+	float : left;
+	margin-top : 1%;
+	margin-left : 10%;
+}
+#uh{
+	clear : both;
+	visibility : hidden;
+}

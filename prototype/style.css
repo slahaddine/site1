@@ -1,0 +1,60 @@
+body{
+	background-color : #2f4f4f;
+}
+#all{
+	min-width : 1200px;
+	min-height : 1200px;
+	margin-right:5%; 
+	margin-left:5%;
+}
+#utilisateurs{
+	border : 3px black solid; 
+	width : 49%; 
+	float : left; 
+	height : 400px; 
+	background-image : url(green_userman.png);
+	background-color : rgb(43,210,55); 
+	background-repeat : repeat-x; 
+	padding-right : 6px; 
+}
+#utilisateurs:hover{
+	background-image : url(green_userman_hover.png);
+	cursor : pointer; 
+}
+#activites{
+	border : 3px black solid; 
+	width: 49%;
+	float : right;
+	height : 400px; 
+	background-image : url(activity_man.png);
+}
+#activites:hover{
+	cursor : pointer; 
+	background-image : url(activity_man_hover.png);
+}
+#addActivity{
+	border : 3px black solid; 
+	margin-top : 10px; 
+	background-image: url(./addActivity.png);
+	padding-right : 6px; 
+	float : left;  
+	width : 49%; 
+	height : 200px; 	
+}
+
+#addUser{
+	background-image: url(./adduser.png);
+	border : 3px black solid; 
+	margin-top : 10px; 
+	float : right;  
+	width : 49%; 
+	height : 200px; 
+}
+#addUser:hover{
+	cursor : pointer; 
+	background-image: url(./adduser_hover.png);
+}
+#addActivity:hover{
+	background-image: url(./addActivity_hover.png);
+	cursor : pointer;
+}

@@ -1,0 +1,16 @@
+body{
+	background-color : #2f4f4f;
+	max-width : 1400px;
+	min-width : 1400px;
+	margin-right:30px; 
+	margin-left:30px;
+	color : white; 
+}
+#divUser{
+
+}
+#table{
+	border: 0; 
+	cellspacing:0;
+	cellpadding:10;
+}

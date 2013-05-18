@@ -1,0 +1,30 @@
+#h2Titre{
+	margin-top:0;
+	margin-left : 40%;
+	padding-top : 2%;
+}
+#divActivite{
+	.margin-top : 5%;
+	margin : 5% 5% 0 5%;
+	padding-left : 5%;
+	border : 3px #bda44d solid ;
+	border-radius : 4em;	
+}
+#underline{
+	text-decoration : underline;
+}
+#tabulateur{
+	margin-left : 40px;
+}
+#titreActivite{
+	font : 40px bold;
+	color : #bda44d;
+} 
+#sous-titre{
+	margin-left : 5%;
+}
+#texte{
+	margin-left : 8%;
+	margin-top : 0;
+	padding-top:0;
+}

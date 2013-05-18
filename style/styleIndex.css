@@ -1,0 +1,29 @@
+#jquery{
+	width:100%;
+	height:400px;
+}
+#center{
+
+}
+#baliseActivite{
+	font-family : bubblegum sans;
+	margin-left : 8%;
+}
+#messageActu{
+	width : 45%;
+	border : solid 3px;
+	border-image : url(../images/cadreActivite.png) 30 1 round;
+	border-radius : 2em;
+	margin-left : 10%;
+}
+#second{
+	border : solid 3px #bda44d;
+	float : right;
+	margin-right : 5%;
+	margin-top : -5%;
+}
+#baliseConnexion{
+	font-family : bubblegum sans; 
+	margin-top : 0;
+	margin-left : 2px;
+}

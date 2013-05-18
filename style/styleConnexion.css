@@ -1,0 +1,19 @@
+ #mainConnexion{
+	xxpadding-bottom:20%;
+}
+#divNewMembre{
+	xxmargin-top : 7.5%;
+	xxmargin-left : 10%;
+	xxfloat : left;	
+}
+#h2Connexion{
+	padding-top : 10%;
+	margin-top : 0;
+	margin-left : 55%;
+}
+#connexionRegistration{
+	border : solid 3px #bda44d;
+	margin-right : 10%;
+	margin-left : 60%;
+	margin-top : 0%;
+}

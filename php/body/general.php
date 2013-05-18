@@ -1,3 +1,4 @@
+
 	<?php
 			session_start(); 
 	?>
@@ -9,13 +10,13 @@
 						$ver=true; 
 					}
 					if(!$ver){
-						echo "<p><a id='connexion' href='./HTML/formulaires/connect_user.html'>Se connecter \n";
-						echo "<a id='inscirption' href='./HTML/formulaires/create_user.html'></a>/ S'enregistrer</p></a>" ;
+						echo "<div id='connexionInscription'><a id='connexion' href='../../HTML/formulaires/connect_user.php'>Se connecter </a>";
+						echo "/ <a id='connexion' href='./HTML/formulaires/create_user.php'>S'enregistrer</a></div>" ;
 					}
 					else{
 						echo "<a id='deconnexion' href='./php/interactions/disconnect.php'> <p>Se Deconnecter </p></a>"; 
 					}
-					 ?>
+			?>
 			<div id="entete">
 			</div>
 			<div id="bar1"> </div>
@@ -65,5 +66,5 @@
 			<hr id="xmenu"> </hr>
 		</div>
 		<div id="deuxiemeDiv">
-			<div id="firstBG"></div>
+			<div id="firstBG">   </div>
 			<div id="main">

@@ -4,13 +4,15 @@
 	private $name = ""; 
 	private $firstName = ""; 
 	private $email = ""; 
+	private $privilege=""; 
 
-	public function __construct($_username, $_password, $_fName, $_name, $_email){
+	public function __construct($_username, $_password, $_fName, $_name, $_email, $_privilege="user"){
 		$this->username = $_username; 
 		$this->password = $_password; 
 		$this->name = $_name; 
 		$this->firstName = $_fName; 
 		$this->email = $_email; 
+		$this->privilege = $_privilege; 
 	}
 	
 	public function setUsername($_username){
@@ -44,14 +46,26 @@
 	public function getEmail(){
 		return $this->email;
 	}
+	public function getPrivilege(){
+		return $this->privilege; 
+	}
 	
-	public function toString(){
+	public function __toString(){
 		$result = "<b>Username</b> : ".$this->getUsername().", <b>Password</b> : ".$this->getPassword(). ", <b>email</b> : ".$this->getEmail().", <b>Name</b> : ".$this->getName().", <b>First name</b> : ".$this->firstName; 
 		return $result;
 	}
 	function __destruct(){
 		
 	
+	}
+	public function loadFromRecord($line)
+	{
+		$this->username = $line["username"];
+		$this->password = $line["password"];
+		$this->name = $line["name"];
+		$this->firstName = $line["firstname"];
+		$this->email = $line["email"];
+		$this->privilege = $line["privilege"];
 	}
 }
 ?>

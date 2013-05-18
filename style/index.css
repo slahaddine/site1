@@ -7,17 +7,42 @@ body{
 #premierDiv{
 	background : white;
 }
-#connexion{
-	/*float : right;
-	clear : both;*/
-	/*margin-right : 3%;*/
+#contenantConnexion{
+	border : solid 3px #bda44d;
+	float : right;
+	width : 100%;
+	margin-right : 5%;
+	background : white;
+}
+#connexion {
 	text-decoration : none;
 	color : black;
+}
+#visibilityConnexion a+#divConnexion{
+	display : none;
+}
+#visibilityConnexion a:hover+#divConnexion{
+	display : block;
+	text-decoration : none;
+}
+#divConnexion{
+	position : absolute;
 }
 #connexionInscription{
 	float : right;
 	margin-right : 3%;
 	margin-top : 1%;
+}
+#inscription{
+	text-decoration : none;
+	color : black;
+}
+#deconnexion{
+	float : right;
+	margin-right : 3%;
+	margin-top : 1%;
+	text-decoration : none;
+	color : black;
 }
 #entete{
 	background : url(../images/titre.png) no-repeat center;
@@ -83,9 +108,9 @@ body{
 	position: absolute;
 }
 #menu ul li ul{
-	border : solid 3px;
+	border : solid 3px #96CA2D;
 	border-image:url(../images/border_menu75.png) 30 30 round;
-	border-radius:2em;
+	.border-radius:2em; /*ne fonctionne pas avec les images*/
 	background-color : white;
 }
 #deuxiemeDiv{
@@ -93,89 +118,62 @@ body{
 }
 #firstBG{
 	width : 10%;
-	padding-bottom : 100%;
+	padding-bottom : 440px;
 	float : left;
 	background:url(../images/backgroundDegrade.jpg) no-repeat left top;
-}
-#secondBG{
-	/*width : 10%;
-	padding-bottom : 100%;
-	background:url(../images/backgroundDegrade.jpg) no-repeat right top;*/	
 }
 #main{
 	background : white;
 	padding-bottom: 60%;
 	margin: 0 10%;
 }
-#jquery{
-	width:100%;
-	height:400px;
-}
-#center{
-
-}
-#baliseActivite{
-	font-family : bubblegum sans;
-	margin-left : 8%;
-}
-#messageActivite{
-	float:left;
-	width : 45%;
-	border : solid 3px;
-	border-image : url(../images/cadreActivite.png) 30 1 round;
-	border-radius : 2em;
-	margin-left : 10%;
-}
-#second{
-	border : solid 3px #bda44d;
-	float : right;
-	margin-right : 5%;
-	margin-top : -5%;
-}
-#baliseConnexion{
-	font-family : bubblegum sans; 
-	margin-top : 0;
-	margin-left : 2px;
+#secondBG{
+	/*width : 10%;
+	padding-bottom : 100%;
+	background:url(../images/backgroundDegrade.jpg) no-repeat right top;*/	
 }
 #PDP{
-	margin-left : 45%;
-	clear : both; 
+	margin : 0;
+	margin-bottom : 1%;
+	background : #bda44d;
+	padding : 1px 0;
+	color : #320E15;
 }
-
-/* page de connexion et d'enregistrement */
-#mainConnexion{
-	padding-bottom:20%;
+#acces{
+	border-right:1px dotted white;
+	margin: 2% 0 0 18%;
+	padding-right : 8%;
+	float : left;
 }
-#divNewMembre{
-	margin-top : 7.5%;
+#sous-acces{
+	margin-top : 0; 
+	margin-left : 17%;
+}
+#sous-acces a{
+	color : #320E15;
+}
+#hrPDP{
+	clear : both;
+	visibility : hidden;
+}
+#contactPDP{
+	border-right:1px dotted white;
+	margin : 2% 8% 0 8%;
+	padding-right : 8%;
+	padding-bottom : 4%;
+	float : left;
+}
+#sous-contact{
 	margin-left : 10%;
-	float : left;	
 }
-#h2NouveauMembre{
-	margin-top: 0;
-	margin-left : 5%;
-	padding-top : 10%;
+#lienPDP{
+	margin-top : 5%;
 }
-#nouveauMembre{
-	width : 100%;
-	border : solid 3px;
-	border-image : url(../images/cadreActivite.png) 30 1 round;
-	border-radius : 2em;
-	margin-left : 20%;
-	margin-top :0;
-	color : black;
-	padding : 0;
+#lienLogo{
+	cursor : pointer; 
 }
-#h2Connexion{
-	padding-top : 10%;
-	margin-top : 0;
-	margin-left : 55%;
-}
-#connexionRegistration{
-	border : solid 3px #bda44d;
-	margin-right : 10%;
-	margin-left : 60%;
-	margin-top : 0%;
+#alignementLogo{
+	margin-left : 7%;
 }
 
 
