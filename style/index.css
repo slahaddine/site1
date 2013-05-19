@@ -37,10 +37,22 @@ body{
 	text-decoration : none;
 	color : black;
 }
-#deconnexion{
+#adminDeco{
 	float : right;
 	margin-right : 3%;
-	margin-top : 1%;
+	text-decoration : none;
+	color : black;
+}
+#userDeco{
+	float : right;
+	margin-right : 5%;
+	text-decoration : none;
+	color : black;
+}
+#deconnexion{
+	float : right;
+	margin-right : -6.75%;
+	margin-top : 2%;
 	text-decoration : none;
 	color : black;
 }

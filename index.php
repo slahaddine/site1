@@ -30,7 +30,10 @@
 							  $titrePage = "Contact"; 
 							  break;
 		case "activites"	: $currentPage = './php/pages/activites.php';
-							  $titrePage = "Activites"; 
+							  $titrePage = "Activites";
+							  break;
+		case "actualites"	: $currentPage = './php/pages/actualites.php';
+							  $titrePage = "Timesline";
 	}	
 ?>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -54,6 +57,7 @@
 			<link href="style/styleMultimedia.css" rel="stylesheet" style="text/css">
 			<link href="style/styleContact.css" rel="stylesheet" style="text/css">
 			<link href="style/styleActivites.css" rel="stylesheet" style="text/css">
+			<link href="style/styleActualites.css" rel="stylesheet" style="text/css">
 		<?php 
 		$popup = false; 
 			if(!isset($_COOKIE["firefoxMessage"]))
@@ -104,7 +108,13 @@
 				</div>" ;
 		}
 		else{
-			echo "<a id='deconnexion' href='./php/interactions/disconnect.php'> <p>Se Deconnecter </p></a>"; 
+			if (isset($_SESSION["connected"])){
+				if ($_SESSION["privilege"]=="admin")
+					echo "<a id='adminDeco' href='./prototype/panneau.php'> <p>Administration</p><br/>";
+				else
+					echo "<a id='userDeco' href='#'> <p>Mon compte</p><br/>";
+				echo "<a id='deconnexion' href='./php/interactions/disconnect.php'> <p>Se Deconnecter </p></a>"; 
+			}
 		}
 		?>
 		<div id="entete">
@@ -119,7 +129,7 @@
 								<a href="index.php?page=acceuil"> <p>Premiere Page </p></a>
 							</li>
 							<li> 
-								<a href="#"> <p>Activite de la semaine </p></a>
+								<a href="index.php?page=activites"> <p>Activite de la semaine </p></a>
 							</li>
 							<li> 
 								<a href="#"> <p>Dernieres nouvelles</p></a>
@@ -127,7 +137,7 @@
 						</ul>
 				</li>
 				<li> 
-					<a href="#"> <p>Timesline </p></a>
+					<a href="index.php?page=actualites"> <p>Timesline </p></a>
 				</li>
 				<li> 
 					<a href="index.php?page=multimedia"> <p>Mediatheque</p></a>
@@ -138,11 +148,6 @@
 				<li> 
 					<a href="index.php?page=contact"> <p>Contact</p></a>
 				</li>				
-				<?php
-					if (!$ver)
-						if ($_SESSION["privilege"]=="admin")
-							echo "<li> <a href='./prototype/panneau.php'> <p>Administration</p></a></li>"
-				?>	
 			</ul>
 		</div>
 		<div id="bar2"> </div>
@@ -177,7 +182,7 @@
 				Acc&eacutes <br />
 				<p id="sous-acces">
 					<a href="index.php?page=acceuil">Acceuil</a><br />
-					<a href="#">Timesline</a><br />
+					<a href="index.php?page=actualites">Timesline</a><br />
 					<a href="index.php?page=multimedia">Mediatheque</a><br />
 					<a href="index.php?page=activites">Activit&eacutes </a><br />
 					<a href="index.php?page=contact">Contact</a><br />

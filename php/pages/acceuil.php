@@ -36,9 +36,9 @@ function defilImgHrz(el,srcs,pas,tps) {
 
 window.onload=function() {
 	defilImgHrz('hr',[
-    "images/bob.jpeg",
-    "images/desktop.jpg",
-    "images/hd.jpg",
+    "images/island.jpg",
+    "images/mecca.jpeg",
+    "images/turkey.jpeg",
  
   ]);
 };
@@ -57,9 +57,11 @@ window.onload=function() {
 		</p>
 	</div>
 </div>
-<div id="second">
-	<h2 id="baliseConnexion">Connexion</h2>
-	<?php
+<?php
+	if($ver){
+		echo "<div id='second'>
+			<h2 id='baliseConnexion'>Connexion</h2>";
 		include './HTML/formulaires/form_connect_user.html';
-	?>
-</div>
+		echo "</div>";
+	}
+?>
